@@ -24,6 +24,7 @@ specifiers:
   busboy: ^1.6.0
   eslint: 8.22.0
   eslint-config-next: 12.2.5
+  flowbite: ^1.5.3
   formidable: ^2.0.1
   nanoid: ^4.0.0
   next: 12.2.5
@@ -55,6 +56,7 @@ dependencies:
   aws-sdk: 2.1204.0
   axios: 0.27.2
   busboy: 1.6.0
+  flowbite: 1.5.3
   formidable: 2.0.1
   nanoid: 4.0.0
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
@@ -1191,6 +1193,10 @@ packages:
     resolution: {integrity: sha512-MSAs9t3Go7GUkMhpKC44T58DJ5KGk2vBo+h1cqQeqlMfdGkxaVB78ZWpv9gYi/g2fa4sopag9gJsNvS8XGgWJA==}
     dev: false
 
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
+
   /@prisma/client/4.2.1_prisma@4.2.1:
     resolution: {integrity: sha512-PZBkY60+k5oix+e6IUfl3ub8TbRLNsPLdfWrdy2eh80WcHTaT+/UfvXf/B7gXedH7FRtbPFHZXk1hZenJiJZFQ==}
     engines: {node: '>=14.17'}
@@ -2272,6 +2278,13 @@ packages:
     resolution: {integrity: sha512-0sQoMh9s0BYsm+12Huy/rkKxVu4R1+r96YX5cG44rHV0pQ6iC3Q+mkoMFaGWObMFYQxCVT+ssG1ksneA2MI9KQ==}
     dev: true
 
+  /flowbite/1.5.3:
+    resolution: {integrity: sha512-e2OHfndxTHtGMqcPqvqwg3gGLg57hmIDVgE/BazMDccgirQ0JEtirKnbZZ4WSOIEhNDgO9pJZuyC8rRlcMm6pQ==}
+    dependencies:
+      '@popperjs/core': 2.11.6
+      mini-svg-data-uri: 1.4.4
+    dev: false
+
   /follow-redirects/1.15.1:
     resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
     engines: {node: '>=4.0'}
@@ -2746,7 +2759,6 @@ packages:
   /mini-svg-data-uri/1.4.4:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
-    dev: true
 
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
