@@ -1,6 +1,7 @@
 import { HeartIcon } from "@heroicons/react/outline";
 import {HeartIcon as SolidHeartIcon} from "@heroicons/react/solid"
 import { NextPage } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Comment from "../../components/Comment";
@@ -23,6 +24,12 @@ const CreateClip: NextPage = () => {
   };
   return (
     <div className="bg-white dark:bg-white h-screen">
+      <Head>
+        <title>Social Media Preview</title>
+        <meta property="og:url" content={`https://d1rdwsr9nm2ku1.cloudfront.net/${clip.data?.url}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={clip.data?.title} />
+      </Head>
       <Navbar />
       <main className="mx-[18px] my-10 2xl:mx-64 sm:mx-[87px]">
         <div>
