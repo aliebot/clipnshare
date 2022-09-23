@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import ClipThumbnail from "../components/ClipThumbnail";
 
@@ -29,14 +30,15 @@ function spinner() {
   );
 }
 
-
-
 const Home: NextPage = () => {
   const router = useRouter();
   const allClips = trpc.useQuery(["clip.get-all-public-clips"]);
-  console.log(allClips)
+  console.log(allClips);
   return (
     <div className="bg-white dark:bg-white">
+      <Head>
+        <title>clipnshare | clip and share it to the world</title>
+      </Head>
       <Navbar />
       <main className="2xl:mx-64 sm:flex">
         {allClips.data?.map((clip) => {
