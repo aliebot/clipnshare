@@ -10,7 +10,7 @@ export default function ClipThumbnail({ clip }: { clip: TClipThumbnail }) {
   return (
     <a href={`/clips/${clip.id}`}>
       <div className="sm:max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 md:hover:scale-105 ease-in duration-100 hover:cursor-pointer">
-        <video className="rounded-t-lg w-full">
+        <video className="rounded-t-lg w-full h-full">
           <source src={`https://d1rdwsr9nm2ku1.cloudfront.net/${clip.url}`} />
         </video>
         <div className="p-3">
