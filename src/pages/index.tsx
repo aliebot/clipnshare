@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import ClipThumbnail from "../components/ClipThumbnail";
 
@@ -43,6 +42,7 @@ const Home: NextPage = () => {
         {allClips.data?.map((clip) => {
           return (
             <div className="p-4" key={clip.id}>
+              {/* @ts-ignore */}
               <ClipThumbnail clip={clip} />
             </div>
           );
